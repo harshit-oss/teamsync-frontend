@@ -1,0 +1,225 @@
+.dashboardContainer{
+  padding: 40px;
+  background-color: #f8fafc;
+  min-height: 100vh;
+}
+
+.welcomeSection{
+  margin-bottom: 35px;
+}
+
+.welcomeSection h1{
+  font-size: 38px;
+  color: #0f172a;
+  margin-bottom: 10px;
+}
+
+.welcomeSection p{
+  color: #64748b;
+  font-size: 16px;
+}
+
+.cardSection{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+  margin-bottom: 35px;
+}
+
+.card{
+  background-color: white;
+  padding: 28px;
+  border-radius: 14px;
+  box-shadow: 0px 4px 12px rgba(0,0,0,0.06);
+}
+
+.card h2{
+  font-size: 34px;
+  color: #2563eb;
+  margin-bottom: 10px;
+}
+
+.card p{
+  color: #475569;
+  font-size: 15px;
+}
+
+.actionSection{
+  display: flex;
+  gap: 15px;
+  margin-bottom: 35px;
+}
+
+.actionSection button{
+  padding: 12px 20px;
+  border: none;
+  border-radius: 8px;
+  background-color: #2563eb;
+  color: white;
+  cursor: pointer;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.actionSection button:hover{
+  background-color: #1d4ed8;
+}
+
+.bottomSection{
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 25px;
+}
+
+.taskTable,
+.progressSection{
+  background-color: white;
+  padding: 25px;
+  border-radius: 14px;
+  box-shadow: 0px 4px 12px rgba(0,0,0,0.06);
+}
+
+.taskTable h2,
+.progressSection h2{
+  margin-bottom: 20px;
+  color: #0f172a;
+}
+
+table{
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th,
+td{
+  padding: 14px;
+  text-align: left;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+th{
+  color: #334155;
+}
+
+td{
+  color: #475569;
+}
+
+.progressItem{
+  margin-bottom: 22px;
+}
+
+.progressItem p{
+  margin-bottom: 8px;
+  color: #334155;
+}
+
+.progressBar{
+  width: 100%;
+  height: 10px;
+  background-color: #e2e8f0;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.progressFill{
+  height: 100%;
+  background-color: #2563eb;
+  border-radius: 20px;
+}
+
+.inviteForm{
+  background-color: white;
+
+  padding: 25px;
+
+  border-radius: 16px;
+
+  margin-bottom: 30px;
+
+  display: flex;
+
+  gap: 15px;
+
+  align-items: center;
+
+  box-shadow: 0px 4px 14px rgba(0,0,0,0.06);
+}
+
+.inviteForm input,
+.inviteForm select{
+
+  flex: 1;
+
+  padding: 12px;
+
+  border-radius: 8px;
+
+  border: 1px solid #cbd5e1;
+}
+
+.inviteForm button{
+
+  background-color: #2563eb;
+
+  color: white;
+
+  border: none;
+
+  padding: 12px 20px;
+
+  border-radius: 8px;
+
+  cursor: pointer;
+
+  font-weight: 600;
+}
+
+@media screen and (max-width: 768px){
+
+  .dashboardContainer{
+
+    padding: 20px;
+  }
+
+  .cardSection{
+
+    grid-template-columns: 1fr;
+
+    gap: 20px;
+  }
+
+  .bottomSection{
+
+    flex-direction: column;
+  }
+
+  .taskTable{
+
+    width: 100%;
+
+    overflow-x: auto;
+  }
+
+  .progressSection{
+
+    width: 100%;
+  }
+
+  .welcomeSection h1{
+
+    font-size: 32px;
+  }
+
+  .actionSection{
+
+    flex-direction: column;
+
+    gap: 15px;
+  }
+
+  .actionSection button{
+
+    width: 100%;
+  }
+}

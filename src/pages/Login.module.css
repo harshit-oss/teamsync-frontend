@@ -1,0 +1,113 @@
+.wrapper{
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(to right, #eef2ff, #dbeafe);
+}
+
+.loginBox{
+  width: 380px;
+  background-color: white;
+  padding: 35px;
+  border-radius: 14px;
+  box-shadow: 0px 6px 18px rgba(0,0,0,0.08);
+}
+
+.header{
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.header h1{
+  color: #1e293b;
+  margin-bottom: 8px;
+  font-size: 32px;
+}
+
+.header p{
+  color: #64748b;
+  font-size: 14px;
+}
+.logo{
+  width: 8rem;
+  zoom:150%;
+}
+
+.formSection{
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.inputGroup{
+  display: flex;
+  flex-direction: column;
+}
+
+.inputGroup label{
+  margin-bottom: 6px;
+  font-size: 14px;
+  color: #334155;
+  font-weight: 600;
+}
+
+.inputGroup input{
+  padding: 12px;
+  border: 1px solid #cbd5e1;
+  border-radius: 8px;
+  font-size: 14px;
+}
+
+.inputGroup input:focus{
+  outline: none;
+  border-color: #2563eb;
+}
+
+.formSection button{
+  margin-top: 10px;
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  background-color: #2563eb;
+  color: white;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.formSection button:hover{
+  background-color: #1d4ed8;
+}
+
+.bottomText{
+  margin-top: 22px;
+  text-align: center;
+}
+
+.bottomText p{
+  font-size: 14px;
+  color: #475569;
+}
+
+.bottomText span{
+  color: #2563eb;
+  font-weight: 600;
+  cursor: pointer;
+}
+.registerLink{
+
+  color: #2563eb;
+
+  font-weight: 600;
+
+  cursor: pointer;
+
+  transition: 0.3s;
+}
+
+.registerLink:hover{
+
+  text-decoration: underline;
+}
